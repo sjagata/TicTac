@@ -1,0 +1,164 @@
+<!-- Group - AJ
+activity_score.xml - Tictac
+Members:
+	1.Satyanarayana Jagata - 800844992
+	2.Sumanth Krishna - 800810828
+ -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Score" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FD8D8"
+        android:clickable="false"
+        android:longClickable="false"
+        android:text="@string/button_scoreboard" />
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    
+    >
+    
+    <TextView
+        android:id="@+id/pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:paddingTop="5dp"
+        android:textStyle="bold"
+        android:text="@string/textview_noofgames"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/pgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textSize="20sp" />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:paddingTop="15dp"
+        android:text="@string/textview_playerwins"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_p1"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/playerone"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/oneper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:textSize="20sp" />
+          <TextView
+            android:id="@+id/per"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_p2"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/playertwo"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/twoper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/per2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp" >
+
+        <TextView
+            android:id="@+id/Lastwin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/cong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_backfromscore" />
+
+    </LinearLayout>
+
+</LinearLayout>

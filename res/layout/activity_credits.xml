@@ -1,0 +1,77 @@
+<!-- Group - AJ
+activity_credits.xml - Tictac
+Members:
+	1.Satyanarayana Jagata - 800844992
+	2.Sumanth Krishna - 800810828
+ -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CreditsActivity" >
+
+    <Button
+        android:id="@+id/information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FD8D8"
+        android:clickable="false"
+        android:text="@string/button_info" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/information"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/textviewl_groupinfo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="14dp"
+        android:textStyle="bold"
+        android:text="@string/textview_sum" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="33dp"
+        android:text="@string/textview_mem"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/textview_san"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="86dp"
+        android:text="@string/button_backtogame" />
+
+</RelativeLayout>
